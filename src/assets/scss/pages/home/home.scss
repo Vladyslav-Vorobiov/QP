@@ -1,0 +1,279 @@
+.header {
+  height: 80px;
+  padding: 20px 0;
+
+  .wrapper {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 45px;
+    line-height: 40px;
+  }
+
+  .navbar-brand {
+    width: 57px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 15px;
+    font-family: $museo;
+    color: $dark-gray;
+    transition: all 0.3s;
+    &:hover {
+      color: $btn-hovered;
+    }
+  }
+}
+
+.promo {
+  background-color: $highlight;
+  .box {
+    display: flex;
+    padding: 100px 0;
+  }
+  .title {
+    max-width: 585px;
+    margin-bottom: 32px;
+  }
+  .text {
+    max-width: 483px;
+    margin-bottom: 48px;
+  }
+  .wrapper {
+    max-width: 482px;
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.starting {
+  margin: 140px 0 314px;
+  .title {
+    margin-bottom: 60px;
+    span {
+      background-color: $highlight;
+    }
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 132px;
+  }
+}
+
+.comments {
+  margin-bottom: 140px;
+  .wrapper {
+    display: flex;
+    position: relative;
+  }
+  &__left {
+    max-width: 483px;
+  }
+  &__right {
+    max-width: 585px;
+    padding-top: 22px;
+    position: relative;
+  }
+  .title {
+    span {
+      display: inline-block;
+      width: 355px;
+      background-color: $highlight;
+    }
+  }
+
+  .user-info {
+    gap: 30px;
+    &__avatar {
+      width: 73px;
+      height: 73px;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &__position {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  .text {
+    margin: 17px 0 32px;
+    font-size: 24px;
+    font-family: $museo;
+    line-height: 28px;
+    color: $dark-gray;
+  }
+
+  .caption {
+    font-size: 15px;
+    font-family: $museo;
+    color: $violet;
+  }
+
+  .controls-box {
+    width: 116px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    button {
+      opacity: 1;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 48px;
+    width: 48px;
+    border: 1px solid $btn-disabled;
+    border-radius: 50%;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+      border-color: $violet;
+    }
+    &:focus {
+      border: 1px solid black;
+    }
+  }
+
+  .commas-img {
+    position: absolute;
+    top: 88px;
+    left: -48px;
+  }
+}
+
+.questions {
+  margin: 140px 0;
+  .title {
+    max-width: 500px;
+    margin-bottom: 60px;
+    span {
+      background-color: $highlight;
+    }
+  }
+}
+
+.contacts {
+  background-color: $highlight;
+
+  .wrapper {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .text-box {
+    flex: 0 1 483px;
+    & > p {
+      line-height: 30px;
+    }
+  }
+
+  .title {
+    margin-bottom: 32px;
+  }
+  .caption {
+    font-size: 16px;
+  }
+  .subtitle {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-family: $museo;
+
+    & + p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    & + p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-box {
+    flex: 0 1 585px;
+  }
+}
+
+.footer {
+  &-main {
+    padding: 32px 0 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    img {
+      width: 45px;
+      height: 16px;
+    }
+  }
+
+  .text {
+    max-width: 380px;
+    &__subtitle {
+      margin-bottom: 16px;
+    }
+    &__caption {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  .nav {
+    font-size: 15px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__link {
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: $btn-hovered;
+      }
+    }
+  }
+  &-bottom {
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    gap: 66px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 27px;
+    color: #828282;
+
+    .copyright {
+      flex: 1 1 auto;
+    }
+
+    .link {
+      font-family: "Montserrat", sans-serif;
+      color: #828282;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,311 @@
+@include tablet {
+  .header {
+    padding: 28px 0;
+    position: relative;
+
+    .wrapper {
+      justify-content: end;
+    }
+
+    .logo,
+    .itc-select {
+      display: none;
+    }
+
+    .navbar-toggler {
+      padding: 4px 8px;
+      border: none;
+      span {
+        color: #000000;
+      }
+      &:focus {
+        outline: 1px solid $gray;
+        box-shadow: none;
+      }
+    }
+    .navbar-collapse {
+      width: 100vw;
+      margin-top: 12px;
+      background-color: #ffffff;
+      transform: translate(40px, 10px);
+      text-align: end;
+    }
+
+    .nav-item {
+      border-bottom: 1px solid $btn-disabled;
+      padding-right: 40px;
+    }
+
+    .btn-base {
+      position: absolute;
+      right: 112px;
+      top: 20px;
+    }
+  }
+
+  .promo {
+    .box {
+      padding: 40px 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+    .text {
+      max-width: 508px;
+      margin: 0 auto 48px;
+    }
+    &__image {
+      margin: 0 auto;
+      max-width: 418px;
+    }
+  }
+
+  .starting {
+    margin: 120px 0 294px;
+    .title {
+      span {
+        background: linear-gradient(
+          0deg,
+          rgba(98, 72, 255, 0.1) 50%,
+          rgba(255, 255, 255, 0) 50%
+        );
+      }
+    }
+    .wrapper {
+      gap: 120px 30px;
+    }
+  }
+
+  .comments {
+    margin-bottom: 120px;
+    .wrapper {
+      flex-direction: column;
+      gap: 48px;
+    }
+    &__right {
+      max-width: 508px;
+      padding-top: 0;
+      align-self: center;
+      text-align: center;
+    }
+    .title {
+      span {
+        width: auto;
+      }
+    }
+    .user-info {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 60px;
+    }
+
+    .text {
+      margin-top: 0;
+    }
+
+    .commas-img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+
+    .controls-box {
+      top: 60%;
+      width: 100%;
+    }
+  }
+
+  .questions {
+    margin: 120px 0;
+  }
+
+  .contacts {
+    .container-custom {
+      padding: 0 130px;
+    }
+    .wrapper {
+      padding: 48px 0;
+      gap: 48px;
+    }
+
+    .text-box,
+    .form-box {
+      flex: 1 1 auto;
+    }
+  }
+
+  .footer {
+    &-main {
+      padding: 62px 0 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      order: 1;
+      margin-bottom: 54px;
+    }
+
+    .nav {
+      order: 2;
+      margin-bottom: 40px;
+      &__list {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 47px;
+      }
+    }
+
+    .text {
+      order: 3;
+      max-width: 508px;
+      &:first-of-type {
+        margin-bottom: 32px;
+      }
+      &__subtitle {
+        text-align: center;
+      }
+    }
+
+    &-bottom {
+      padding-bottom: 48px;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
+
+@include phone {
+  .header {
+    position: relative;
+    .logo {
+      line-height: 20px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 30px;
+    }
+    .navbar-collapse {
+      transform: translateX(20px);
+    }
+
+    .nav-item {
+      padding-right: 20px;
+    }
+
+    .btn-base {
+      display: none;
+    }
+  }
+
+  .promo {
+    .box {
+      text-align: start;
+    }
+    .btn-base {
+      width: 100%;
+    }
+  }
+
+  .starting {
+    margin: 80px 0;
+    .title {
+      margin-bottom: 32px;
+      span {
+        background: $highlight;
+      }
+    }
+    .wrapper {
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  .comments {
+    margin-bottom: 80px;
+    .title {
+      position: relative;
+      span {
+        background-color: transparent;
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 100%;
+        background-color: $highlight;
+      }
+    }
+    .wrapper {
+      gap: 32px;
+    }
+
+    .user-info {
+      margin-bottom: 75px;
+      gap: 8px;
+    }
+
+    .text {
+      margin-bottom: 40px;
+    }
+
+    .commas-img {
+      top: 190px;
+    }
+
+    .controls-box {
+      top: unset;
+      bottom: 36px;
+    }
+  }
+
+  .questions {
+    margin: 80px 0;
+
+    .accordion {
+      &__label {
+        max-width: 190px;
+        &:before {
+          right: 16px;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    .container-custom {
+      padding: 0 20px;
+    }
+  }
+
+  .footer {
+    &-main {
+      padding: 32px 0;
+    }
+
+    .logo {
+      margin-bottom: 46px;
+    }
+
+    .nav {
+      align-self: flex-start;
+      &__list {
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+
+    .text {
+      &__subtitle {
+        text-align: start;
+      }
+    }
+
+    &-bottom {
+      padding-bottom: 32px;
+    }
+  }
+}
