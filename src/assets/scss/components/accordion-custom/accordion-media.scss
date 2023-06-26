@@ -1,0 +1,26 @@
+@include tablet {
+  .accordion {
+    max-width: 688px;
+    &__item.active > .accordion__content {
+      max-height: 162px;
+    }
+    &__content {
+      max-width: 558px;
+    }
+  }
+}
+
+@include phone {
+  .accordion {
+    &__item {
+      padding: 24px 16px;
+    }
+    &__label {
+      font-size: 18px;
+    }
+
+    &__item.active > .accordion__content {
+      max-height: 352px;
+    }
+  }
+}
