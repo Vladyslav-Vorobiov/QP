@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade everywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/assets/styles/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-custom">
+        <div class="wrapper d-flex">
+          <div class="nav">
+            <a href="#" class="logo"
+              ><img src="./src/assets/images/logo.svg" alt="company logo"
+            /></a>
+            <nav class="navbar navbar-expand-lg p-0">
+              <div class="container-fluid p-0">
+                <a class="navbar-brand" href="#"></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="fa-solid fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#starting"> How it works </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#promo"> About </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#questions"> Instructions </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Accounts </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#comments"> Platforms </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacts"> Contact </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="actions d-flex gap-4">
+            <div class="itc-select select-lang" id="selectLanguage">
+              <button
+                type="button"
+                class="itc-select__toggle select-lang__toggle"
+                name="language"
+                value="english"
+                data-select="toggle"
+                data-index="2"
+              >
+                En
+              </button>
+              <div class="itc-select__dropdown select-lang__dropdown">
+                <ul class="itc-select__options select-lang__options">
+                  <li
+                    class="itc-select__option select-lang__option"
+                    data-select="option"
+                    data-value="german"
+                    data-index="0"
+                  >
+                    GE
+                  </li>
+                  <li
+                    class="itc-select__option select-lang__option"
+                    data-select="option"
+                    data-value="french"
+                    data-index="1"
+                  >
+                    FR
+                  </li>
+                  <li
+                    class="itc-select__option itc-select__option_selected select-lang__option"
+                    data-select="option"
+                    data-value="english"
+                    data-index="2"
+                  >
+                    EN
+                  </li>
+                  <li
+                    class="itc-select__option select-lang__option"
+                    data-select="option"
+                    data-value="ukrainian"
+                    data-index="3"
+                  >
+                    UA
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn-base btn-base_size_sm">
+              Sign in for free
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo" id="promo">
+        <div class="container-custom">
+          <div class="box d-flex justify-content-between">
+            <div class="promo__content">
+              <h1 class="title">
+                Trade everywhere. <br />
+                Invest here!
+              </h1>
+              <p class="text">
+                We provide only the best trading software. The trading terminal
+                MetaTrader4 is the most popular and convenient platform for
+                access to global exchanges. You can work anywhere.
+              </p>
+              <button class="btn-base btn-base_size_lg">start trading</button>
+            </div>
+            <div class="wrapper">
+              <img
+                class="promo__image"
+                src="./src/assets/images/promo.svg"
+                alt="scheme bars and arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="starting" id="starting">
+        <div class="container-custom">
+          <h2 class="title">
+            Getting Started Is<br /><span>Fast &amp; Easy</span>
+          </h2>
+          <div class="wrapper d-flex">
+            <div class="card">
+              <span class="card__subtitle">01.</span>
+              <h4 class="card__title">Register</h4>
+              <p class="card__text">
+                Complete the simple registration to get your trading
+                credentials.
+              </p>
+            </div>
+            <div class="card">
+              <span class="card__subtitle">02.</span>
+              <h4 class="card__title">Verification</h4>
+              <p class="card__text">
+                Big Invest is required to verify your identity, upload your
+                documents quickly and get approved in minutes.
+              </p>
+            </div>
+            <div class="card">
+              <span class="card__subtitle">03.</span>
+              <h4 class="card__title">Deposit funds</h4>
+              <p class="card__text">
+                Big Invest accepts credit cards and bank wires. Just use the
+                secure deposit form and follow the steps.
+              </p>
+            </div>
+            <div class="card">
+              <span class="card__subtitle">04.</span>
+              <h4 class="card__title">Start trading</h4>
+              <p class="card__text">
+                Once your deposit has been credited, you can begin trading
+                instantly. In no time you will see profits rolling into your
+                account.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comments" id="comments">
+        <div class="container-custom">
+          <div class="wrapper justify-content-between">
+            <div class="comments__left">
+              <h2 class="title">People love Big <span>Invest</span></h2>
+            </div>
+            <div class="comments__right">
+              <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="user-info d-flex align-items-center">
+                      <div class="user-info__avatar">
+                        <img
+                          src="./src/assets/images/avatar.jpg"
+                          alt="a man in shirt"
+                        />
+                      </div>
+                      <div class="box">
+                        <h4 class="user-info__name">Albert Abello</h4>
+                        <p class="user-info__position">Director of Growth</p>
+                      </div>
+                    </div>
+                    <p class="text">
+                      This magical product actually works! It has radically
+                      changed the way we build our audiences. Increasing new
+                      customer sales by 6x in our most mature market.
+                    </p>
+                    <span class="caption">01 / 04</span>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="user-info d-flex align-items-center">
+                      <div class="user-info__avatar">
+                        <img
+                          src="./src/assets/images/avatar.jpg"
+                          alt="a man in shirt"
+                        />
+                      </div>
+                      <div class="box">
+                        <h4 class="user-info__name">Albert Abello</h4>
+                        <p class="user-info__position">Director of Growth</p>
+                      </div>
+                    </div>
+                    <p class="text">
+                      This magical product actually works! It has radically
+                      changed the way we build our audiences. Increasing new
+                      customer sales by 6x in our most mature market.
+                    </p>
+                    <span class="caption">02 / 04</span>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/images/commas.svg"
+                  alt="two commas"
+                  class="commas-img"
+                />
+              </div>
+            </div>
+            <div class="controls-box">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide="prev"
+              >
+                <span class="fa-solid fa-angle-left" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide="next"
+              >
+                <span class="fa-solid fa-angle-right" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions" id="questions">
+        <div class="container-custom">
+          <h2 class="title">Frequently asked <span>questions</span></h2>
+          <div class="accordion">
+            <ul class="accordion__list list-style-none">
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">
+                  What platforms will I be able to use?
+                </h4>
+                <div class="accordion__content">
+                  We provide only the best trading software. The trading
+                  terminal MetaTrader4 is the most popular and convenient
+                  platform for access to global exchanges. You can work
+                  anywhere. All you need is the Internet because the necessary
+                  trading tools are already collected in one place and are
+                  available in a couple of clicks. Use only the best and develop
+                  with us!
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+              <li class="accordion__item" tabindex="0">
+                <h4 class="accordion__label">How do I change my details?</h4>
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam unde architecto necessitatibus explicabo minus atque,
+                  qui amet a asperiores placeat?
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container-custom">
+          <div class="wrapper">
+            <div class="text-box">
+              <h2 class="title">Contact us!</h2>
+              <p class="text mb-5">
+                The support staff and customer service are available to help you
+                with any questions or needs you might have. Just drop us a line.
+              </p>
+              <p class="caption mb-4">
+                This site is owned and operated by Kode Tech Solutions LTD
+              </p>
+              <h4 class="subtitle">Phone:</h4>
+              <p>442038857261</p>
+              <h4 class="subtitle">Email:</h4>
+              <p>help@google.com</p>
+              <h4 class="subtitle">Address:</h4>
+              <p>
+                Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro,
+                Republic of the Marshall Islands, MH 96960
+              </p>
+            </div>
+            <div class="form-box">
+              <form class="form" id="form">
+                <fieldset class="form__fieldset">
+                  <div class="mb-4">
+                    <label
+                      for="formInputName"
+                      class="form__label visually-hidden"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form__control name"
+                      id="formInputName"
+                      placeholder="Name"
+                      required
+                      minlength="3"
+                      maxlength="20"
+                      title="This field is required"
+                    />
+                    <span></span>
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      for="formInputEmail"
+                      class="form__label visually-hidden"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form__control email"
+                      id="formInputEmail"
+                      placeholder="Email"
+                      required
+                      title="Format example: username@domain or username@domain.tld"
+                    />
+                    <span></span>
+                  </div>
+                  <div class="mb-5">
+                    <label
+                      for="formTextarea"
+                      class="form__label visually-hidden"
+                      >Textarea</label
+                    >
+                    <textarea
+                      class="form__control textarea"
+                      id="formTextarea"
+                      rows="4"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn-base btn-base_size_md">
+                    send
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-custom">
+        <div class="footer-main">
+          <a href="#" class="logo"
+            ><img src="./src/assets/images/logo.svg" alt="company logotype"
+          /></a>
+          <div class="text">
+            <h4 class="text__subtitle">Information and high risk warning:</h4>
+            <p class="text__caption">
+              Trading with foreign exchange (FX), contract for differences
+              (CFDs) and precious metals carries a high level of risk that may
+              not be suitable for all investors. Leverage creates additional
+              risk and loss exposure. Before you decide to trade foreign
+              exchange or contract for differences, carefully consider your
+              investment objectives, experience level, and risk tolerance.
+            </p>
+          </div>
+          <div class="text">
+            <h4 class="text__subtitle">Legal disclaimer:</h4>
+            <p class="text__caption">
+              Forex trading entails significant risks and is not appropriate for
+              all investors. The possibility of incurring substantial losses
+              should be taken into account. It is therefore important to
+              understand the possible consequences of investing. Traders should
+              weigh their earning potential against the risks involved and act
+              accordingly. Interactive Trade Ltd operating under brand and using
+              domenLink domain within the European Economic Area.
+            </p>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#promo" class="nav__link">About us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#starting" class="nav__link">Instructions</a>
+              </li>
+              <li class="nav__item">
+                <a href="#comments" class="nav__link">Platforms</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contact us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Sign in</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Sign up for free</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright text-capitalize">
+            copyright 2020, all right reserved
+          </p>
+          <a href="" class="link">Terms and Conditions</a>
+          <a href="" class="link">Privacy Policys</a>
+          <a href="" class="link">Risk Warnings</a>
+          <a href="" class="link">Anti-Money Laundering</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/assets/js/classes/selectCustom.js"></script>
+    <script src="./src/assets/js/accordion.js"></script>
+  </body>
+</html>
