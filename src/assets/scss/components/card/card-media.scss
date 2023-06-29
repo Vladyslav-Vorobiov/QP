@@ -1,0 +1,34 @@
+@include tablet {
+  .card {
+    max-height: 300px;
+    flex-basis: 329px;
+    &:nth-of-type(2) {
+      position: relative;
+      top: 180px;
+    }
+    &:nth-of-type(4) {
+      position: relative;
+      top: 190px;
+    }
+    &:nth-of-type(odd):after {
+      right: -198px;
+    }
+    &:nth-of-type(2):before {
+      left: -198px;
+    }
+  }
+}
+
+@include phone {
+  .card {
+    flex-basis: 280px;
+    max-height: 307px;
+    &:nth-of-type(even) {
+      top: 0;
+    }
+    &:nth-of-type(odd):after,
+    &:nth-of-type(2):before {
+      display: none;
+    }
+  }
+}

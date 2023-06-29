@@ -1,0 +1,46 @@
+.accordion {
+  max-width: 995px;
+  margin: 0 auto;
+
+  &__item {
+    position: relative;
+    margin-bottom: 16px;
+    padding: 34px 40px;
+    border: 2px solid $violet;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__item.active {
+    & > .accordion__content {
+      margin-top: 24px;
+      max-height: 150px;
+    }
+    & > .accordion__label:before {
+      transition: all 0.3s;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__label {
+    font-size: 24px;
+    cursor: pointer;
+    &:before {
+      content: "+";
+      position: absolute;
+      right: 40px;
+      font-size: 30px;
+      line-height: 22px;
+      transition: all 0.3s;
+    }
+  }
+  &__content {
+    max-height: 0;
+    max-width: 750px;
+    overflow: hidden;
+    transition: all 0.3s;
+    font-size: 16px;
+    line-height: 27px;
+    color: $gray;
+  }
+}

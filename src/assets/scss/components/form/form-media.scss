@@ -1,0 +1,15 @@
+@include tablet {
+  .form {
+    &__fieldset {
+      padding: 80px 42px;
+    }
+  }
+}
+
+@include phone {
+  .form {
+    &__fieldset {
+      padding: 48px 16px;
+    }
+  }
+}

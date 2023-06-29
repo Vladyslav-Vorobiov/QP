@@ -1,0 +1,41 @@
+.btn-base {
+  padding: 0;
+  background-color: $btn-default;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 60px;
+  outline: 0;
+  border: 0;
+  font-family: "Museo-Sans", sans-serif;
+  transition: all 0.3s;
+  &_size {
+    &_lg {
+      width: 257px;
+      height: 54px;
+      font-size: 16px;
+    }
+    &_md {
+      width: 172px;
+      height: 54px;
+      font-size: 14px;
+    }
+    &_sm {
+      width: 167px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+  &:hover {
+    background-color: $btn-hovered;
+  }
+  &:active {
+    background-color: $btn-active;
+  }
+  &:focus {
+    outline: 1px solid #000000;
+  }
+  &:disabled {
+    color: #828282;
+    background-color: $btn-disabled;
+  }
+}
