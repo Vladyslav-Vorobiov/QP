@@ -551,30 +551,21 @@ button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #4f4f4f;
+  border-color: #4f4f4f;
 }
-.form__control:focus:valid {
+.form__control.success {
   border-color: #0eac00;
 }
-.form__control:focus:invalid {
-  border: 1px solid #eb5757;
+.form__control.error {
+  border-color: #eb5757;
 }
-.form__control:focus:invalid + span {
-  position: relative;
-}
-.form__control:focus:invalid + span:after {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 150px;
+.form__control + .error {
   font-size: 15px;
-  font-family: "Museo-Sans", sans-serif;
+  line-height: 16px;
   color: #eb5757;
-}
-.form__control.name:focus:invalid + span:after {
-  content: "Min 3 max 20 chars";
-}
-.form__control.email:focus:invalid + span:after {
-  content: "Incorrect email type";
+  font-family: "Museo-Sans", sans-serif;
+  position: absolute;
+  bottom: -20px;
 }
 .form__control.textarea {
   resize: none;
