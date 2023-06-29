@@ -22,37 +22,24 @@
       outline: none;
       box-shadow: none;
       color: $gray;
+      border-color: $gray;
     }
 
-    &:focus:valid {
+    &.success {
       border-color: $valid;
     }
 
-    &:focus:invalid {
-      border: 1px solid $invalid;
-      & + span {
-        position: relative;
-      }
-      & + span:after {
-        position: absolute;
-        top: 8px;
-        left: 0;
-        width: 150px;
-        font-size: 15px;
-        font-family: $museo;
-        color: $invalid;
-      }
+    &.error {
+      border-color: $invalid;
     }
 
-    &.name:focus:invalid {
-      & + span:after {
-        content: "Min 3 max 20 chars";
-      }
-    }
-    &.email:focus:invalid {
-      & + span:after {
-        content: "Incorrect email type";
-      }
+    & + .error {
+      font-size: 15px;
+      line-height: 16px;
+      color: $invalid;
+      font-family: $museo;
+      position: absolute;
+      bottom: -20px;
     }
 
     &.textarea {
